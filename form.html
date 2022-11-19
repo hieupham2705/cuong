@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-family: "Roboto", sans-serif;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #333;
+    }
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #658de4, #d23af4);
+    }
+    .container {
+      width: 400px;
+      border-radius: 10px;
+      height: 700px;
+      background-color: #fff;
+      padding: 40px 35px;
+    }
+    .form-header {
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+    }
+    .form-item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .form-item label {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .form-control {
+      position: relative;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+    .form-control i {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      padding: 10px 15px;
+      transform: translateY(-50%);
+    }
+    .form-control input {
+      width: 100%;
+      margin-left: 30px;
+      border: none;
+      outline: none;
+      padding: 15px 10px;
+    }
+    .form-control input::placeholder {
+      font-size: 14px;
+      color: #ccc;
+      font-weight: 500;
+    }
+    .forgot-password {
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .submit {
+      margin-top: 40px;
+      padding: 12px 20px;
+      width: 100%;
+      border: none;
+      background: linear-gradient(to right, #658de4, #d23af4);
+      color: white;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .submit:hover  {
+        opacity: 0.8;
+    }
+    .other-select {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px auto;
+    }
+    .other-title {
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .other-icon {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+    .other-icon i {
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      color: white;
+    }
+    .fb {
+      background-color: blue;
+    }
+    .tw {
+      background-color: #658de4;
+    }
+    .gg {
+      background-color: red;
+    }
+    .other-bottom {
+      margin-top: 130px;
+    }
+    .other-bottom p {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="#" id="form">
+        <h2 class="form-header">Login</h2>
+        <div class="form-item">
+          <label for="">Username</label>
+          <div class="form-control">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Type your username" />
+          </div>
+          <div class="form-item">
+            <label for="">Password</label>
+            <div class="form-control">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Type your password" />
+            </div>
+            <a class="forgot-password">Forgot password ?</a>
+          </div>
+        </div>
+        <button class="submit">Login</button>
+      </form>
+      <div class="other-select">
+        <div class="other-top">
+          <p class="other-title">Or sign up using</p>
+          <div class="other-icon">
+            <a href="" class="icon-link">
+              <i class="fa-brands fa-facebook-f fb"></i>
+            </a>
+            <a href="" class="icon-link">
+              <i class="fa-brands fa-twitter tw"></i>
+            </a>
+            <a href="" class="icon-link">
+              <i class="fa-brands fa-google gg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="other-bottom">
+          <p class="other-title">Or sign up using</p>
+          <a href="" class="login-link">
+            <p>Sign up</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
